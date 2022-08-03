@@ -71,6 +71,7 @@
 <script>
 // import { validUsername } from '@/utils/validate'
 
+
 export default {
   name: 'Login',
   data() {
@@ -165,7 +166,6 @@ export default {
         await this.$refs.loginForm.validate()
         await this.$store.dispatch('user/getToken', this.loginForm)
         this.$router.push('/')
-        // console.log(this.$router)
         this.$message.success('登录成功')
       } finally {
         this.isLogin = false
