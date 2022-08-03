@@ -4,7 +4,6 @@ import store from '@/store'
 import axios from 'axios'
 import { Message } from 'element-ui'
 import { getTokenTime } from './auth'
-import router from '@/router'
 function isTimedOut() {
   const previousTime = getTokenTime
   const currentTime = Date.now()
